@@ -5,4 +5,5 @@ with open('README.md', 'w') as f:
   for file in files:
       ex = file.split(".")[-1]
       if ((ex == "png") or (ex == "jpg")):
+        print("- " + file,file=f)
         print("![](" + file + ")",file=f)
