@@ -23,3 +23,40 @@ for size in size_list:
   height = size[1]
   img = np.ones((height,width, 3),np.uint8)*255
   cv2.imwrite(header + 'white_' + str(width) + '_' + str(height) + '.png',img)
+
+# write circle
+# https://qiita.com/miyamotok0105/items/b04fab6598f690fd60ba
+for size in size_list:
+
+  width = size[0]
+  height = size[1]
+  img = np.ones((height,width, 3),np.uint8)*255
+  cv2.circle(img,
+           center=(int(width/2), int(height/2)),
+           radius=50,
+           color=(0, 0, 0),
+           thickness=-1,
+           lineType=cv2.LINE_4,
+           shift=0)
+  cv2.imwrite(header + 'circle_' + str(width) + '_' + str(height) + '.png',img)
+
+
+# write circle
+# https://qiita.com/miyamotok0105/items/b04fab6598f690fd60ba
+for size in size_list:
+
+  width = size[0]
+  height = size[1]
+  center_x = int(width/2)
+  center_y = int(height/2)
+  rect_w_half = 100
+  rect_h_half = 50
+  img = np.ones((height, width, 3),np.uint8)*255
+  cv2.rectangle(img,
+              pt1=(center_x - rect_w_half, center_y - rect_h_half),
+              pt2=(center_x + rect_w_half, center_y + rect_h_half),
+              color=(0, 0, 0),
+              thickness=-1,
+              lineType=cv2.LINE_4,
+              shift=0)
+  cv2.imwrite(header + 'rectangle_' + str(width) + '_' + str(height) + '.png',img)
