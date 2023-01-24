@@ -33,7 +33,7 @@ for size in size_list:
   img = np.ones((height,width, 3),np.uint8)*255
   cv2.circle(img,
            center=(int(width/2), int(height/2)),
-           radius=50,
+           radius=150,
            color=(0, 0, 0),
            thickness=-1,
            lineType=cv2.LINE_4,
@@ -50,7 +50,7 @@ for size in size_list:
   center_x = int(width/2)
   center_y = int(height/2)
   rect_w_half = 100
-  rect_h_half = 50
+  rect_h_half = 150
   img = np.ones((height, width, 3),np.uint8)*255
   cv2.rectangle(img,
               pt1=(center_x - rect_w_half, center_y - rect_h_half),
