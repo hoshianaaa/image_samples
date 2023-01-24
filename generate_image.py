@@ -14,3 +14,12 @@ for size in size_list:
   height = size[1]
   blank = np.zeros((height, width, 3))
   cv2.imwrite(header + 'blank_' + str(width) + '_' + str(height) + '.png',blank)
+
+# white image
+# https://qiita.com/miyamotok0105/items/b04fab6598f690fd60ba
+for size in size_list:
+
+  width = size[0]
+  height = size[1]
+  img = np.ones((height,width, 3),np.uint8)*255
+  cv2.imwrite(header + 'white_' + str(width) + '_' + str(height) + '.png',blank)
