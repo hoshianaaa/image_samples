@@ -48,6 +48,8 @@
 ![](./generate_image_white_4872_3248.png)
 - ./generate_image_white_640_480.png
 ![](./generate_image_white_640_480.png)
+- ./pins.png
+![](./pins.png)
 - ./scratch.png
 ![](./scratch.png)
 - ./tea_packes.png
