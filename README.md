@@ -1,5 +1,7 @@
 - ./binary_image.png
 ![](./binary_image.png)
+- ./edge.png
+![](./edge.png)
 - ./generate_image_blank_1392_1040.png
 ![](./generate_image_blank_1392_1040.png)
 - ./generate_image_blank_1628_1236.png
